@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="4000.0" prefWidth="4000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.ReportController">
+    <top>
+        <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <buttons>
+                <Button fx:id="button1" mnemonicParsing="false" onAction="#handleReportOne" text="%report.one" textFill="#d71010" />
+                <Button fx:id="button2" mnemonicParsing="false" onAction="#handleReportTwo" text="%report.two" textFill="#eb1111" />
+                <Button fx:id="button3" mnemonicParsing="false" onAction="#handleReportThree" text="%report.three" textFill="#d70c0c" />
+                <Button fx:id="button4" mnemonicParsing="false" onAction="#handleLogsButton" text="login_activity.txt" textFill="#d71414" />
+            </buttons>
+            <padding>
+                <Insets right="10.0" />
+            </padding>
+        </ButtonBar>
+    </top>
+    <center>
+        <TextArea fx:id="textArea" editable="false" />
+    </center>
+</BorderPane>

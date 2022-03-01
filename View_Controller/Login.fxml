@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.LoginController">
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <Label layoutX="132.0" layoutY="171.0" text="%login.username" textFill="#a10606" />
+            <TextField fx:id="usernameField" layoutX="226.0" layoutY="167.0" onKeyReleased="#handleEnter">
+            <effect>
+               <SepiaTone level="0.5" />
+            </effect></TextField>
+            <Label layoutX="133.0" layoutY="209.0" text="%login.password" textFill="#b50404" />
+            <PasswordField fx:id="passwordField" layoutX="226.0" layoutY="205.0" onKeyReleased="#handleEnter">
+            <effect>
+               <SepiaTone level="0.5" />
+            </effect></PasswordField>
+            <Label fx:id="zoneLabel" layoutX="545.0" layoutY="14.0" />
+            <Label fx:id="zoneLabel1" layoutX="509.0" layoutY="14.0" text="Zone:" />
+         <effect>
+            <Lighting diffuseConstant="2.0">
+               <bumpInput>
+                  <Shadow>
+                     <color>
+                        <Color red="0.9078947305679321" green="0.8784722089767456" blue="0.8784722089767456" />
+                     </color></Shadow>
+               </bumpInput>
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color red="0.9078947305679321" green="0.5926535129547119" blue="0.5926535129547119" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+        </AnchorPane>
+    </center>
+    <bottom>
+        <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <buttons>
+            <Label prefHeight="17.0" prefWidth="286.0" text="By Shadab Mustafa" />
+                <Button mnemonicParsing="false" onAction="#handleLogin" text="%login.logIn" textFill="#d71212" />
+            <Button mnemonicParsing="false" onAction="#handleLogsButton" text="login_activity.txt" textFill="#e41414" />
+            </buttons>
+            <padding>
+                <Insets right="10.0" />
+            </padding>
+        </ButtonBar>
+    </bottom>
+</BorderPane>

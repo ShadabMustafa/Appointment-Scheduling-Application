@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <center>
+        <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <columns>
+            </columns>
+        </TableView>
+    </center>
+    <top>
+        <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <buttons>
+                <Button fx:id="filterButton" mnemonicParsing="false" onAction="#addFilter" text="%button.filter" textFill="#ee0f0f" ButtonBar.buttonData="LEFT" />
+                <Button mnemonicParsing="false" onAction="#addRecord" text="%button.add" textFill="#e80e0e" />
+                <Button mnemonicParsing="false" onAction="#viewRecord" text="%button.view" textFill="#eb1717" />
+                <Button mnemonicParsing="false" onAction="#editRecord" text="%button.edit" textFill="#c60707" />
+                <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteRecord" text="%button.delete" textFill="#cd0a0a" />
+            </buttons>
+            <padding>
+                <Insets left="10.0" right="10.0" />
+            </padding>
+        </ButtonBar>
+    </top>
+</BorderPane>
